@@ -6,6 +6,6 @@
 
  void showtitle(void);
 
-
+ void showit(int &);
 
 #endif //TRY0101_TRY0101_GOBLALFUN_H

@@ -102,6 +102,18 @@ void main()
   Plorg pll("Itair", 99);
   pll.ShowCI();
   //根据需求文档 进行类的设计
+  longline( 8); //8
+  int num = 4;
+  int aaa[5]= { 23, 32, 3, 44, 5};
+  Lists<int> List_null;
+  std::cout << "List_null isempty? " << List_null.isempty() << std::endl;
+  Lists<int> Lists_test(aaa, num);
+  while (!Lists_test.isfull())  {
+    Lists_test.push(100);
+  }  
+  Lists_test.visit(showit); //
+  //设计通用 类 , 其实就是要类模板
+  //类模板中的 模板类函数 要求类型严格对应..
   longline();
   system("pause");
 }

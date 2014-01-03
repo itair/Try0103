@@ -3,7 +3,7 @@
 #include "GobalFuc.h"
 #include <iostream>
 
- void showtitle(void) { 
+ void showtitle() { 
   using namespace std;
   cout<< "------------------------\n" 
     << "-  C++ Primer Plus    -\n" 
@@ -11,3 +11,9 @@
     << "        &             -\n"     
     << "-  Hello World!       -\n";
 }
+
+ void showit (int & n)
+ {
+   std::cout << n << std::endl;
+ }
+ 

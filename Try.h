@@ -63,11 +63,72 @@ private:
   static const int kICMin = 0;
   char name[kNameLen];
   int CI;
-};
-
+};// class plorg
 
 
 //Ä£°æ
+template<class T>
+class Lists {
+public:
+  Lists();
+  ~Lists();
+  Lists(const T[], const int);
+  bool isfull();
+  bool push(const T &);
+  void visit(void (*pf) (T &));
+  bool isempty();
+ 
+private:
+  static const int kMax = 20;
+  T item[kMax];
+  int pointnum;
+}; // ÀàÄ£°å Lists
 
 
+template<class T>
+Lists<T>::Lists() {
+  //item = NULL;
+  pointnum = 0;
+}
+
+template<class T>
+Lists<T>::~Lists(){}
+
+template<class T>
+Lists<T>::Lists(const T ti[], const int n){
+  if (n < 0 || n >= kMax ) {
+    //item = NULL;
+    pointnum = 0;
+    return;
+  }
+  for (int i = 0; i < n; i++)  {
+    item[i] = ti[i];    
+  }
+  pointnum = n;
+}
+
+template<class T>
+bool Lists<T>::isfull() {
+  return pointnum == kMax;
+}
+
+template<class T>
+bool Lists<T>::isempty() {
+  return pointnum == 0;
+}
+
+template<class T>
+bool Lists<T>::push(const T & t) {
+  if (pointnum < kMax) {
+    item[pointnum++] = t;
+    return true;
+  } else
+    return false;
+}
+
+template<class T>
+void Lists<T>::visit(void (*pf) (T & t)) {
+  for (T tt : item) 
+    pf (tt);  
+}
 #endif //TRY1230_TRY1230_TRY_H
