@@ -17,7 +17,17 @@ void main()
   longline();
 
   longline(1); //1  
-  
+  BankAccount user1;
+  user1.OutputInfo();
+  BankAccount user2("What is it?", "I don't have an account id", 0.0);
+  user2.OutputInfo();
+  user1.DepositAccount(200.0);
+  user1.OutputInfo();
+  user1.WithdrawAccount(1000.1);
+  user1.OutputInfo();
+  //Ω®¡¢¿‡
+
+
   longline();
   system("pause");
 }
