@@ -48,8 +48,23 @@ public:
 private:
   double x;
   double y;
-
 };// class Move
+
+class Plorg {
+public:
+  ~Plorg();
+  Plorg(const char str[] = "Plorga", const int ci = 50) ;
+  bool SetCI(const int) ;
+  void ShowCI() const;
+protected:
+private:
+  static const int kNameLen = 20;
+  static const int kICMax = 100;
+  static const int kICMin = 0;
+  char name[kNameLen];
+  int CI;
+};
+
 
 
 //Ä£°æ

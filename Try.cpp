@@ -61,3 +61,28 @@ Move Move::Add(const Move & m) const {
   const double b = (this->y + m.y) ;
   return  Move(a,b);
  }
+
+//7
+Plorg::~Plorg() {}
+
+Plorg::Plorg(const char str[] /* = "Plorga" */, const int ci /* = 10 */) {
+  if (strlen(str)>= kNameLen || ci < kICMin || ci > kICMax) {
+    const char str[] = "Plorga";
+    const int ci = 10;
+  }  
+  strcpy_s(name, str);
+  CI = ci;
+}
+
+bool Plorg::SetCI(const int ci) {
+  if (ci < 0 || ci > kICMax) 
+    return false;
+  CI = ci;
+  return true;
+}
+
+void Plorg::ShowCI() const {
+  std::cout << "name: " << name << std::endl;
+  std::cout << "CI:   " << CI << std::endl;
+}
+

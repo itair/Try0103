@@ -94,6 +94,14 @@ void main()
   mmmm.Reset();
   mmmm.ShowMove();
   //根据声明 写实现, 测试;
+  longline(7);//7
+  Plorg pl;
+  pl.ShowCI();
+  pl.SetCI(66);
+  pl.ShowCI();
+  Plorg pll("Itair", 99);
+  pll.ShowCI();
+  //根据需求文档 进行类的设计
   longline();
   system("pause");
 }
