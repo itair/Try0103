@@ -38,6 +38,9 @@ private:
     char fname[LIMIT];
 };  // Person
 
+
+
+
 //Ä£°æ
 
 

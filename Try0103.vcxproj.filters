@@ -30,6 +30,9 @@
     <ClInclude Include="sales.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -45,6 +48,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="sale.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
