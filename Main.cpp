@@ -3,11 +3,14 @@
 //   by itAir
 //   Try to use Google C++ programing style   
 ----------------------------------------- */    
+
+#include <iostream>
+#include <string>
+
 #include "Try.h"
 #include "GobalFuc.h"
 #include "Inline.h"
-#include <iostream>
-#include <string>
+#include "golf.h"
 
 using namespace std;
 
@@ -43,6 +46,16 @@ void main()
   three.FormalShow();
   cout << endl;
   //类构造重载完成,,,两种字符串定义,还是string好用.
+  longline(3); //3
+  golf test1[3];
+  for (int i = 0; i < 2; i++)  {
+    if(test1[i].SetGolf() == 0) break;
+    test1[i].Handicap(test1[i], i+1 );
+    test1[i].ShowGolf(test1[i]);
+  }
+  test1[3]= golf();
+  test1[3].ShowGolf(test1[3]);
+  // 比较类与结构体
 
   longline();
   system("pause");

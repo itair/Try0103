@@ -77,11 +77,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GobalFuc.cpp" />
+    <ClCompile Include="golf.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Try.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GobalFuc.h" />
+    <ClInclude Include="golf.h" />
     <ClInclude Include="Inline.h" />
     <ClInclude Include="Try.h" />
   </ItemGroup>
