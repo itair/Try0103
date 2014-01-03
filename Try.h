@@ -38,7 +38,18 @@ private:
     char fname[LIMIT];
 };  // Person
 
+class Move {
+public:
+  ~Move();
+  Move(double a = 0, double b = 0);
+  void ShowMove () const;
+  Move Add(const Move & m) const;
+  void Reset(double a = 0, double b = 0);
+private:
+  double x;
+  double y;
 
+};// class Move
 
 
 //Ä£°æ

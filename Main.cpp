@@ -83,7 +83,17 @@ void main()
   struct_stack.outsum();
   // ADT 栈 的应用
   longline(6);//6
-
+  Move mm;
+  Move mmm(3.3, 6.6);
+  Move mmmm(10.0, 10.0);
+  mm.ShowMove();
+  mmm.ShowMove();
+  mmmm.ShowMove();
+  mmmm = mmmm.Add(mmm);
+  mmmm.ShowMove();
+  mmmm.Reset();
+  mmmm.ShowMove();
+  //根据声明 写实现, 测试;
   longline();
   system("pause");
 }

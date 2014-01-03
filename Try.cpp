@@ -38,3 +38,26 @@ void Person::show() const {
 void Person::FormalShow() const {
   std::cout << "Formal Show :   " << lname << "-" << fname << std::endl;
 }
+
+//6
+Move::~Move(){
+}
+
+Move::Move(double a /* = 0 */, double b /* = 0 */) {
+  x = a;
+  y = b;
+}
+
+void Move::ShowMove() const {
+  std::cout << "x--" << x <<"  y--" << y << std::endl;
+}
+
+void Move::Reset(double a /* = 0 */, double b /* = 0 */) {
+  x = a ; y = b ;
+}
+
+Move Move::Add(const Move & m) const {
+  const double a = (this->x + m.x);
+  const double b = (this->y + m.y) ;
+  return  Move(a,b);
+ }
