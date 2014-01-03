@@ -79,12 +79,14 @@
     <ClCompile Include="GobalFuc.cpp" />
     <ClCompile Include="golf.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="sale.cpp" />
     <ClCompile Include="Try.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GobalFuc.h" />
     <ClInclude Include="golf.h" />
     <ClInclude Include="Inline.h" />
+    <ClInclude Include="sales.h" />
     <ClInclude Include="Try.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -11,6 +11,7 @@
 #include "GobalFuc.h"
 #include "Inline.h"
 #include "golf.h"
+#include "sales.h"
 
 using namespace std;
 
@@ -46,17 +47,27 @@ void main()
   three.FormalShow();
   cout << endl;
   //类构造重载完成,,,两种字符串定义,还是string好用.
-  longline(3); //3
-  golf test1[3];
-  for (int i = 0; i < 2; i++)  {
-    if(test1[i].SetGolf() == 0) break;
-    test1[i].Handicap(test1[i], i+1 );
-    test1[i].ShowGolf(test1[i]);
-  }
-  test1[3]= golf();
-  test1[3].ShowGolf(test1[3]);
+//   longline(3); //3
+//   golf test1[3];
+//   for (int i = 0; i < 2; i++)  {
+//     if(test1[i].SetGolf() == 0) break;
+//     test1[i].Handicap(test1[i], i+1 );
+//     test1[i].ShowGolf(test1[i]);
+//   }
+//   test1[3]= golf();
+//   test1[3].ShowGolf(test1[3]);
   // 比较类与结构体
-
+  longline(4); // 4
+  using SALES::Sales; 
+  
+  double ar[4] = {12.5, 22.1, 18.7, 34.4};  
+  Sales biger(ar, 4);
+  std::cout << "显式构造 Sales\n";
+  biger.showSeles();
+  Sales tiner;  
+  std::cout << "默认构造 Sales\n";
+  tiner.showSeles();
+  
   longline();
   system("pause");
 }
