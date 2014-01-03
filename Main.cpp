@@ -26,7 +26,23 @@ void main()
   user1.WithdrawAccount(1000.1);
   user1.OutputInfo();
   //建立类
-
+  longline(2); //2
+  Person one;
+  Person two("Smythecraft");
+  Person three("Dimwiddy", "Sam");
+  one.show();
+  cout << endl;
+  one.FormalShow();
+  cout << endl;
+  two.show();
+  cout << endl;
+  two.FormalShow();
+  cout << endl;
+  three.show();
+  cout << endl;
+  three.FormalShow();
+  cout << endl;
+  //类构造重载完成,,,两种字符串定义,还是string好用.
 
   longline();
   system("pause");

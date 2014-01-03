@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 
+//1
 BankAccount::BankAccount() {
   using std::string;
   std::cout << "默认构造函数\n";
@@ -22,6 +23,18 @@ BankAccount::BankAccount(const std::string & fn,
   account = money;
 }
 
-BankAccount::~BankAccount() {
+BankAccount::~BankAccount() {}
 
+//2
+Person::Person(const string & ln, const char *fn /* = "HeyYou" */) {
+  lname = ln;
+  strcpy_s(fname,fn);
+}
+
+void Person::show() const {
+  std::cout << "Fullname:   " << fname << "-" << lname << std::endl;
+}
+
+void Person::FormalShow() const {
+  std::cout << "Formal Show :   " << lname << "-" << fname << std::endl;
 }
